@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  margin: auto;
+  padding: 0px;
+}
+
+.container{
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
+  width: 80%;
+  /* background-color: green; */
+  margin: 0%;
+  padding: 10%;
+  text-align: center;
+}
+
+a{
+  color:#aaa;
+}
