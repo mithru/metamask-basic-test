@@ -6,7 +6,7 @@ async function getAccount() {
   const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
   const account = accounts[0];
   document.getElementById('key').innerHTML = account + '';
-  document.getElementById('key').style.fontSize = '1em'
+  document.getElementById('key').style.fontSize = '0.7em'
   document.getElementById('details').innerHTML = "The above is your MetaMask wallet's public key. It is safe to share this key with people or services you wish to interact with. ";
 }
 
