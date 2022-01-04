@@ -7,12 +7,12 @@ async function getAccount() {
   const account = accounts[0];
   document.getElementById('key').innerHTML = account + '';
   document.getElementById('key').style.fontSize = '0.7em'
-  document.getElementById('details').innerHTML = "The above is your MetaMask wallet's public key. It is safe to share this key with people or services you wish to interact with. ";
+  document.getElementById('details').innerHTML = "The above is your MetaMask wallet's public key. ";
 }
 
 
 if (typeof window.ethereum !== 'undefined') {
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "red";
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "#222";
 
   console.log(ethereum.isMetaMask)
   console.log(ethereum.networkVersion)
@@ -27,12 +27,12 @@ if (typeof window.ethereum !== 'undefined') {
 
   document.getElementsByTagName("BODY")[0].style.backgroundColor = "green";
 
-  document.getElementById('mainText').innerHTML = "This page tests if your browser has MetaMask installed and running. Looks like a MetaMask wallet is already connected. ✅"
+  document.getElementById('mainText').innerHTML = "Yay! A MetaMask wallet is detected. 👍"
   document.getElementById('key').innerHTML = "Click <u>here</u> to connect to your MetaMask Wallet and reveal your public key."
 
 } else {
   console.log("ethereum is not defined");
-  document.getElementsByTagName("BODY")[0].style.backgroundColor = "maroon";
-  document.getElementById('mainText').innerHTML = "This page tests if your browser has MetaMask installed and running. At the moment, the page did not detect any MetaMask wallet connected. ❌ <br> <br> The easiest way to use Metamask is by opening the Chrome desktop web browser and <a href='https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn'> downloading the MetaMask Extension by clicking this link</a>."
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "#222";
+  document.getElementById('mainText').innerHTML = "The page did not detect any MetaMask wallet connected. ☹️ <br>  The easiest way to use MetaMask is by opening the Chrome desktop web browser and <a href='https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn'> downloading the MetaMask Extension by clicking this link</a>."
 
 }
