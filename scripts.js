@@ -33,6 +33,6 @@ if (typeof window.ethereum !== 'undefined') {
 } else {
   console.log("ethereum is not defined");
   document.getElementsByTagName("BODY")[0].style.backgroundColor = "#222";
-  document.getElementById('mainText').innerHTML = "The page did not detect any MetaMask wallet connected. ☹️ <br>  The easiest way to use MetaMask is by opening the Chrome desktop web browser and <a href='https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn'> downloading the MetaMask Extension by clicking this link</a>."
+  document.getElementById('mainText').innerHTML = "The page did not detect any MetaMask wallet connected. ☹️ <br> <br>  The easiest way to use MetaMask is by opening the Chrome desktop web browser and <a href='https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn'> downloading the MetaMask Extension by clicking this link</a>."
 
 }
