@@ -7,7 +7,7 @@ async function getAccount() {
   const account = accounts[0];
   document.getElementById('key').innerHTML = account + '';
   document.getElementById('key').style.fontSize = '0.7em'
-  document.getElementById('details').innerHTML = "The above is your MetaMask wallet's public key. ";
+  document.getElementById('details').innerHTML = "The above is your MetaMask wallet's public key. <br> <br> You may share this key with services that you trust. But <u>NEVER</u> share your 12-word recovery phrase to anyone. ";
 }
 
 
